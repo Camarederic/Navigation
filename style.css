@@ -30,6 +30,7 @@ html {
   width: 10rem;
   height: 4rem;
   border: none;
+  overflow: hidden;
 }
 
 .menu-btn div {
@@ -40,6 +41,13 @@ html {
   display: grid;
   place-items: center;
   perspective: 100rem;
+  position: relative;
+  top: 0;
+  transition: top .5s ease-in;
+}
+
+.change .menu-btn div {
+  top: -4rem;
 }
 
 .menu-btn div:first-child {
