@@ -146,3 +146,22 @@ html {
   font-weight: 200;
   height: 3rem;
 }
+
+.letter {
+  transition: font-weight 0.4s;
+}
+
+.letter:hover {
+  font-weight: 900;
+  color: #ccc;
+}
+
+.letter:hover + .letter {
+  font-weight: 500;
+  color: #ddd;
+}
+
+.letter:has(+ .letter:hover) {
+  font-weight: 500;
+  color: #ddd;
+}
