@@ -31,6 +31,7 @@ html {
   height: 4rem;
   border: none;
   overflow: hidden;
+  z-index: 10;
 }
 
 .menu-btn div {
@@ -43,7 +44,7 @@ html {
   perspective: 100rem;
   position: relative;
   top: 0;
-  transition: top .5s ease-in;
+  transition: top 0.5s ease-in;
 }
 
 .change .menu-btn div {
@@ -84,4 +85,20 @@ html {
 
 .menu-btn div:last-child:hover span {
   transform: rotateX(90deg);
+}
+
+.nav {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: #c0ff61;
+  width: 50rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rem 0 5rem 5rem;
+  box-sizing: border-box;
+  transform: scale(0.2, 0.06);
+  transform-origin: 100% 0;
 }
